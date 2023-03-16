@@ -7,11 +7,14 @@
 
 .card img {
   border: 1px dashed red;
-  max-width: 200px;
+  width: 200px;
+  margin-right: 10px;
+  height: 150px;
 }
 
 .card-content {
-  padding: 10px;
+  padding: 40px 0 0 10px;
+  width: 60%;
 }
 
 .card-title {
@@ -26,22 +29,22 @@
 }
 
 .card-price {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin-top: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 400px) {
   .card {
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-  .card img {
-    width: 40%;
-    margin-right: 20px;
-  }
-
   .card-content {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
   }
 }
